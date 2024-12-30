@@ -1,0 +1,33 @@
+<%- include('../partials/header') %> 
+
+
+
+<div class="container container-admin-product">    
+    <div class="row row-admin-product">
+        <%= locals.succ? succ: ""%>
+        <h4>Crear usuario</h4>        
+        <form action="/user/register" method="post" class="" onsubmit="return allChecking()">
+            <div class="form-group p-2">
+                <input type="text" class="form-control" name="email" placeholder="Email *" required>
+            </div>
+            <div class="form-group p-2">
+                <input type="text" class="form-control" name="rol" placeholder="Rol *" required>
+            </div>
+            <div class="form-group p-2">
+                <input type="password" class="form-control" name="newPassword" placeholder="Password *" required>
+            </div>
+            <div class="form-group p-2">
+                <input type="password" class="form-control" name="confirmPasword" placeholder="Confirm Password *" required>
+            </div>
+            <div class="form-group p-2">
+                <button type="submit" class="form-control btn btn-success">Create Account</button>
+            </div> 
+        </form>
+    </div>
+</div>
+
+
+
+
+
+<%- include('../partials/footer') %>

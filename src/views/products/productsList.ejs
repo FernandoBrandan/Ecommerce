@@ -1,0 +1,39 @@
+<%- include('../partials/header') %>
+
+<div> 
+</div>
+
+<div class="container">
+  <div class="row mt-5 mb-5">
+
+    <!-- Comienza el ciclo forEach para crear las tarjetas -->     
+    <% products.forEach(product => { %>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="card">
+          <div class="card-body">
+
+            <div class="img-container">
+              <img src="/img/<%= product.image %>" class="card-img-top image-hover" alt="<%= product.name %>" />              
+              <div class="middle">              
+                <a href="/product/<%= product._id %>" class="btn btn-primary">Detalles</a>
+              </div>
+            </div>
+              
+          </div>
+          <div class="card-body">
+            <h5 class="card-title"><%= product.name %></h5>
+            <p class="card-text">Precio: </p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+            <a href="/" class="btn btn-primary"><img src="/img/cart.png" width="25px"></a>
+          </div>
+
+        </div>
+      </div>
+    <% }); %>  
+    <!-- Fin del ciclo forEach --> 
+
+  </div>
+</div>
+
+<%- include('../partials/footer') %>
+ 

@@ -1,0 +1,105 @@
+{
+    "Categorias": [
+      {
+        "Nombre": "Tecnologia",
+        "SubCategorias": [
+          "Smartphones",
+          "Laptops",
+          "Cámaras digitales",
+          "Auriculares",
+          "Televisores"
+        ]
+      },
+      {
+        "Nombre": "Moda",
+        "SubCategorias": [
+          "Vestidos",
+          "Zapatillas deportivas",
+          "Relojes",
+          "Gafas de sol",
+          "Bolsos"
+        ]
+      },
+      {
+        "Nombre": "Hogar y jardín",
+        "SubCategorias": [
+          "Muebles de sala",
+          "Electrodomésticos de cocina",
+          "Plantas de interior",
+          "Herramientas de jardinería",
+          "Alfombras"
+        ]
+      },
+      {
+        "Nombre": "Deportes y aire libre",
+        "SubCategorias": [
+          "Bicicletas",
+          "Raquetas de tenis",
+          "Tiendas de campaña",
+          "Equipos de fitness",
+          "Ropa deportiva"
+        ]
+      },
+      {
+        "Nombre": "Juguetes y juegos",
+        "SubCategorias": [
+          "Muñecas y peluches",
+          "Juegos de mesa",
+          "Juguetes educativos",
+          "Sets de construcción",
+          "Vehículos de juguete"
+        ]
+      },
+      {
+        "Nombre": "Alimentación y bebidas",
+        "SubCategorias": [
+          "Vinos y licores",
+          "Productos orgánicos",
+          "Snacks saludables",
+          "Productos gourmet",
+          "Bebidas energéticas"
+        ]
+      },
+      {
+        "Nombre": "Belleza y cuidado personal",
+        "SubCategorias": [
+          "Maquillaje",
+          "Cremas antiarrugas",
+          "Perfumes",
+          "Cepillos de pelo",
+          "Productos de afeitado"
+        ]
+      },
+      {
+        "Nombre": "Automoción",
+        "SubCategorias": [
+          "Coches",
+          "Neumáticos",
+          "Accesorios para automóviles",
+          "Aceites y lubricantes",
+          "Baterías"
+        ]
+      },
+      {
+        "Nombre": "Libros y medios",
+        "SubCategorias": [
+          "Novelas",
+          "Películas en Blu-ray",
+          "CDs de música",
+          "Revistas",
+          "Libros de cocina"
+        ]
+      },
+      {
+        "Nombre": "Electrodomesticos",
+        "SubCategorias": [
+          "Termostatos inteligentes",
+          "Asistentes de voz",
+          "Cerraduras inteligentes",
+          "Sistemas de seguridad",
+          "Bombillas inteligentes"
+        ]
+      }
+    ]
+  }
+  

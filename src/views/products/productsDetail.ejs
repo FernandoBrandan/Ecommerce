@@ -1,0 +1,25 @@
+<%- include('../partials/header') %>
+
+<div class="container container-detail">
+  <% if (product) { %>
+  <!-- https://www.lightgalleryjs.com/demos/thumbnails/ -->
+  <div class="row row-detail">
+    <img src="/img/<%= product.image %>" alt="" height="300px" />
+  </div>
+  <div class="row row-detail">
+    <div class="col">
+      <h1>
+        <strong> <%= product.name %> </strong>
+      </h1>
+      <h2><%= product.description %></h2>
+      <h2>Precio: $ 1.000.020</h2>
+    </div>
+    <div class="col">
+      <a href="#" class="btn btn-primary">Comprar</a>
+      <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+    </div>
+  </div>
+  <% } %>
+</div>
+
+<%- include('../partials/footer') %>

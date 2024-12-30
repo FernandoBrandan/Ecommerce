@@ -1,0 +1,81 @@
+html {
+  font-size: 0.9em;
+}
+
+body {
+  /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  color: #222;
+}
+
+.banner {
+  padding-top: 20px;
+  background-image: url("../img/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  height: 450px;
+  background-origin: padding-box;
+}
+
+.u-full-width {
+  width: 100%;
+}
+
+#lista-carrito {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+#vaciar-carrito {
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  font-family: Arial;
+  letter-spacing: 1.5px;
+  color: #000000;
+  padding: 10px 20px 10px 20px;
+  border: solid #dce3e8 0px;
+  text-decoration: none;
+}
+
+#vaciar-carrito:hover {
+  background: #f2f2f2;
+  text-decoration: none;
+}
+
+.submenu {
+  position: relative;
+}
+
+.submenu #carrito {
+  display: none;
+}
+
+.submenu:hover #carrito {
+  display: block;
+  position: absolute;
+  right: 1%;
+  top: 100%;
+  z-index: 1;
+  background-color: white;
+  border-radius: 2%;
+  padding: 20px;
+  min-height: 400px;
+  min-width: 300px;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-top: 2px solid #aaa;
+}
+
+.footer .menu a {
+  color: #fff;
+  margin-bottom: 10px;
+  display: block;
+  text-decoration: none;
+}

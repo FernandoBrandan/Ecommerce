@@ -1,0 +1,70 @@
+<nav class="navbar navbar-expand-xl bg-primary" data-bs-theme="dark">
+  <div class="container-fluid mt-3 mb-3">
+    <a class="navbar-brand" href="/">Ecommerce</a>
+    <div>
+      <ul class="navbar-nav me-5">
+        <li class="nav-item">
+          <a class="nav-link text-light" href="/product/categories">Categorias</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="/product">Productos</a>
+        </li>
+        
+        <% if (locals.userEmail) { %> 
+          
+          <li class="nav-item submenu">
+            <!-- <img src="img/cart.png" id="img-carrito"> -->
+            <a class="nav-link text-light" href="user/getCart"> Carrito </a>
+            <div id="carrito">
+              <table id="lista-carrito" class="u-full-width">
+                <thead>
+                    <tr> 
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th> 
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+                 
+                <a href="#" id="vaciar-carrito" class="btn u-full-width">Vaciar Carrito</a>
+            </div>           
+          </li>
+
+          <% } %>
+
+        <li class="nav-item"> 
+            
+            <% if (!locals.userEmail ) { %>
+                <a class="nav-link text-light" href="/user/signIn"> login </a>
+            <% } %>
+
+            <% if (locals.userEmail) { %>
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <%= locals.userEmail %>
+                    </button>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="/user/logout">Logout</a></li>
+                    </ul>
+                </div>
+            <% } %>
+
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<% if (locals.userEmail) { %>
+  <% if (locals.userRol === "admin") { %>
+  <!-- validacion por roles -->
+    <%- include('../admin/sidebarAdmin') %>
+  <% } %>
+<% } %>
+  
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html=5>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.3.0/united/bootstrap.min.css"
+		integrity="sha512-CsydUhzfdKBDWCZEoTfJ+qeRffIdiTMq4B7monIKdR25O7YsFxrk+oaGiiRChKc6wXnjVoHoKEHEDpgcj1nKeQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/login.css">
+
+	<title>Document</title>
+</head>
+
+<body>
+	<!------ Include the above in your HEAD tag ---------->
+	<div class="container login-container">
+		<div class="row">
+			<div class="col-md-5 login-form-2">		
+				<%= locals.succ? succ: ""%>
+				<h4>Register</h4>
+				<form action="/user/register" method="post" class="" onsubmit="return allChecking()">
+					<div class="form-group p-2">
+						<input type="text" class="form-control" name="email" placeholder="Email *" onchange="nameChecking()" required>
+					</div>
+					<div class="form-group p-2">
+						<input type="text" class="form-control" name="rol" placeholder="Rol *" required>
+					</div>
+					<div class="form-group p-2">
+						<input type="password" class="form-control" name="newPassword" placeholder="Password *" onchange="passwordChecking()" required>
+					</div>
+					<div class="form-group p-2">
+						<input type="password" class="form-control" name="confirmPasword" placeholder="Confirm Password *" onchange="confirmPasswordChecking()" required>
+					</div>
+					<div class="form-group p-2">
+						<button type="submit" class="form-control btn btn-success">Create Account</button>
+					</div>
+					<div class="form-group d-grid gap-2 d-md-flex justify-content-md-end">
+						<button type="button" class="form-control btn btn-info text-dark">Google</button>
+						<button type="button" class="form-control btn btn-dark text-light">GitHub</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+<script src=""></script>
+
+</html>

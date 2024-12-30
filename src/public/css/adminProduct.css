@@ -1,0 +1,10 @@
+.container-admin-product{
+    margin: 50px 0 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row-admin-product {
+    width: 60%; 
+}
